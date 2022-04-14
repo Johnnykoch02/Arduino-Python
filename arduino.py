@@ -1,3 +1,6 @@
+from numpy import int256
+
+
 HIGH = 1
 LOW = 0
 INPUT = 0
@@ -17,8 +20,14 @@ def analogRead(pin):
     pass
 def analogWrite(pin, val):
     print(pin, val)
-def pulseIn(pin, state, timeout):
+def pulseIn(pin, state, timeout) -> int256:
+    return 0
+def delay(millis):
     pass
+def delayMicroseconds(micros):
+    pass
+def millis() ->int:
+    return 0
 
 class Serial(object):
     def __new__(cls):
